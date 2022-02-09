@@ -93,7 +93,7 @@ export async function getStaticProps() {
 	// TODO : change the url here so that if fetches based on prod or test env
 	// const res = await fetch('http://localhost:5000/punks');
 	const res = await fetch('https://floating-peak-57781.herokuapp.com/punks');
-	console.log(res);
+	// console.log(res);
 	const shopItems = await res.json();
 
 	return {
