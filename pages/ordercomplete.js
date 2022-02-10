@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { Text } from "@nextui-org/react";
 import Image from 'next/image';
 import pepe from '../public/0b5.jpeg'
-import { getRandomInt } from "../utils/util";
 
 const css = {
     wrapper: {
@@ -54,7 +53,7 @@ function OrderComplete () {
                         {/* <img src="/0b5.jpeg"/> */}
                         <Grid><Text css={{...css.text, ...css.textTitle}}>Thank you for your purchase!</Text>
                         </Grid>
-                        <Grid><Text css={{...css.text, ...css.textSubtitle}}>Your order ID is #{getRandomInt(1000000)}</Text></Grid>
+                        <Grid><Text css={{...css.text, ...css.textSubtitle}}>Your order ID is #1312312</Text></Grid>
                         <Grid>
                             <Link href="/shop">
                                 <a>
