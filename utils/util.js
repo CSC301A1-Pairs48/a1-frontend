@@ -7,9 +7,9 @@ function calculatePrice(quantity, price) {
 
 function calculateCheckoutPrice(cartItems) {
     let total = 0
-    console.log(cartItems);
+    // console.log(cartItems);
     for (const cartItem of cartItems) {
-        console.log(cartItem);
+        // console.log(cartItem);
         const price = parseFloat(cartItem[0].price.split(' ')[1]);
         total += price * cartItem[1];
     }

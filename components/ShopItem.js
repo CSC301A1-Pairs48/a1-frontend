@@ -20,11 +20,11 @@ function ShopItem ({ data }) {
 
     const dispatch = useDispatch();
     function compAddToCart (itemData){
-        console.log(itemData);
+        // console.log(itemData);
         dispatch(addToCart(itemData));
         closeHandler();
     }
-    console.log(data);
+    // console.log(data);
 
     return (
         <div style={{width: "100%"}}>

@@ -61,7 +61,7 @@ function Cart() {
     console.log(a);
 
     const cartItems = useSelector((state) => state.cart.value)
-    console.log(cartItems);
+    // console.log(cartItems);
     // const reactCartItems = cartItems.map((cartItem) => <CartItem data={data}></CartItem>)
 
     return (

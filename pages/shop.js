@@ -90,9 +90,13 @@ function Shop({ shopItems }) {
 
 export async function getStaticProps() {
 
-	// TODO : change the url here so that if fetches based on prod or test env
-	// const res = await fetch('http://localhost:5000/punks');
-	const res = await fetch('https://a1-server-tomkan0909-a1-48.vercel.app/api/punks');
+	let res;
+	if (process.env.NODE_ENV === "production"){
+		res = await fetch('https://a1-server-tomkan0909-a1-48.vercel.app/api/punks');
+	} else {
+		res = await fetch('http://localhost:5000/api/punks');
+	}
+
 	const shopItems = await res.json();
 
 	return {
