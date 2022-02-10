@@ -35,4 +35,8 @@ function calculateTotal(taxAmount, discountAmount, checkoutPrice) {
     return "Ξ " + (checkoutPrice - discountAmount + taxAmount).toFixed(2).toString();
 }
 
-export { calculatePrice, calculateCheckoutPrice, calculateDiscount, calculateTax, calculateTotal };
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+
+export { calculatePrice, calculateCheckoutPrice, calculateDiscount, calculateTax, calculateTotal, getRandomInt };
