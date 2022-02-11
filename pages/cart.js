@@ -9,13 +9,11 @@ import { useSelector, useDispatch } from 'react-redux';
 
 const css = {
     wrapperLeft: {
-        //backgroundColor: `red`,
         width: `70%`,
         float: `left`,
         padding: `20px`,
     },
     wrapperRight: {
-        // backgroundColor: `tan`,
         position: `fixed`,
         right: `0px`,
         width: `30%`,
@@ -58,11 +56,8 @@ function Cart() {
     const a = isMediaAbove600px ? css.wrapperLeft : cssMediaBelow600.wrapperLeft;
     const b = isMediaAbove600px ? css.wrapperRight : cssMediaBelow600.wrapperRight;
 
-    console.log(a);
 
     const cartItems = useSelector((state) => state.cart.value)
-    // console.log(cartItems);
-    // const reactCartItems = cartItems.map((cartItem) => <CartItem data={data}></CartItem>)
 
     return (
         <div>

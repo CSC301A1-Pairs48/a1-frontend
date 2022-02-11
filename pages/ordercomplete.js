@@ -15,7 +15,6 @@ const css = {
         justifyContent: `center`,
     },
     text: {
-        // fontFamily: `'Roboto', sans-serif`, // MUST LOAD FONT IN HEAD TAG
         color: `black`,
         padding: `2px`,
         textAlign: `center`,
@@ -42,15 +41,9 @@ function OrderComplete () {
     return (
         
         <div>
-            {/* <Image src={pepe}></Image> */}
-            {/* <HeaderBarSpace/> */}
                 <div style={css.wrapper}>
                     <Grid.Container css={css.wrapperCenter} direction="column" justify="center" alignItems="center">
-                        
-                        {/* <div style={{width: `65%`, margin:"0 auto"}}> */}
-                            <Image src={pepe}></Image>
-                        {/* </div> */}
-                        {/* <img src="/0b5.jpeg"/> */}
+                        <Image src={pepe}></Image>
                         <Grid><Text css={{...css.text, ...css.textTitle}}>Thank you for your purchase!</Text>
                         </Grid>
                         <Grid><Text css={{...css.text, ...css.textSubtitle}}>Your order ID is #1312312</Text></Grid>
@@ -65,7 +58,6 @@ function OrderComplete () {
                         </Grid>
                     </Grid.Container>
                 </div>
-            {/* <HeaderBar active={1}/> */}
         </div>
     );
 }

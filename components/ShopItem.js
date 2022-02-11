@@ -13,18 +13,15 @@ const css = {
 }
 
 function ShopItem ({ data }) {
-    //console.log(data);
     const [visible, setVisible] = React.useState(false);
     const handler = () => setVisible(true);
     const closeHandler = () => setVisible(false);
 
     const dispatch = useDispatch();
     function compAddToCart (itemData){
-        // console.log(itemData);
         dispatch(addToCart(itemData));
         closeHandler();
     }
-    // console.log(data);
 
     return (
         <div style={{width: "100%"}}>
@@ -32,8 +29,6 @@ function ShopItem ({ data }) {
             <Card.Body css={{ p: 0 }}>
             <Card.Image
                 src={data.img}
-                // src="/punk2890.png"
-                // src="https://lh3.googleusercontent.com/7ikHKJf9ESMxL5YwMkBgqAo7QHe5-POa1T1y43Lysp1yR_bPjC_gRDAtbDyNCOkZbz8JXNWJ50ene_w3uREivjFz4Otni2BctR5-og=w600"
                 width="100%"
                 height="auto"
                 alt={data.title}
@@ -95,14 +90,6 @@ function ShopItem ({ data }) {
                 </Card>
             </Grid>
         </Grid.Container>
-            
-            {/* <Modal.Header>
-                <Text b size={18}>{data.title}</Text>
-            </Modal.Header>
-            <Modal.Body>
-                <></>
-                <Text>Loren Ipsum</Text>
-            </Modal.Body> */}
             <Modal.Footer>
                 <Button shadow auto color="gradient" onClick={() => compAddToCart(data)}>
                     Add to Cart

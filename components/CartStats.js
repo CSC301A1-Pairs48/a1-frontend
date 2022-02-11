@@ -16,7 +16,6 @@ const css = {
         minWidth: "300px",
         width: `100%`,
         padding: `20px`,
-        //backgroundColor: `#CBECFE`,
         backgroundColor: `white`,
         borderRadius: `10px`,
         boxShadow: `rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px`,
@@ -43,7 +42,6 @@ function CartStats() {
 
     const dispatch = useDispatch();
     function applyDiscount () {
-        // console.log(userInputDiscountCode);
         switch (userInputDiscountCode) {
             case "0xv439c3d":
                 setDiscount(0.2)
@@ -64,7 +62,6 @@ function CartStats() {
     const discountAmount = calculateDiscount(checkoutPrice, discount);
     const taxAmount = calculateTax(discountAmount, checkoutPrice, 0.01);
     const totalPrice = calculateTotal(taxAmount, discountAmount, checkoutPrice);
-    // const total = 
     
     return (
         <div style={css.wrapper}>
@@ -178,7 +175,6 @@ function CartStats() {
                     <Button auto color="gradient" style={{width: '100%'}} onClick={() => dispatch(clearCart())}>Submit Order</Button>
                 </a> 
             </Link>
-            {/* <Button auto color="gradient" style={{width: '100%'}}>Submit Order</Button> */}
         </div>
     );
 }

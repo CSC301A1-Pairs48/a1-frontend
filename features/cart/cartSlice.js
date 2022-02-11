@@ -11,9 +11,6 @@ export const cartSlice = createSlice({
         addToCart: (state, action) => {
             const existInd = state.value.map((x) =>x[0]["title"]).indexOf(action.payload["title"]);
             if (existInd === -1) state.value.push([action.payload, 1])
-            // if (!state.value.includes((action.payload, 1))) {
-            //     state.value.push([action.payload , 1]);
-            // }
         },
         removeFromCart: (state, action) => {
             const removeInd = state.value.map((x) =>x[0]["title"]).indexOf(action.payload["title"]);
