@@ -1,11 +1,10 @@
 import HeaderBar from "../components/HeaderBar";
-import Head from 'next/head'
 import CartItem from "../components/CartItem";
 import CartStats from "../components/CartStats";
 import HeaderBarSpace from "../components/HeaderBarSpace";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { Text } from "@nextui-org/react";
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 const css = {
     wrapperLeft: {

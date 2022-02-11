@@ -1,5 +1,3 @@
-import HeaderBar from "../components/HeaderBar";
-import HeaderBarSpace from "../components/HeaderBarSpace";
 import { Grid } from "@nextui-org/react";
 import { Button } from "@nextui-org/react";
 import Link from 'next/link'

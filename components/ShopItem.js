@@ -1,6 +1,6 @@
 import { Card, Row, Text, Modal, Button, Grid} from '@nextui-org/react';
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import {useDispatch } from 'react-redux';
 import { addToCart } from '../features/cart/cartSlice';
 
 const css = {

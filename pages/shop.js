@@ -1,14 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import ShopItem from '../components/ShopItem'
-import { Grid, NextUIProvider } from '@nextui-org/react';
-import { Button, Text } from '@nextui-org/react';
+import { Grid } from '@nextui-org/react';
+import { Text } from '@nextui-org/react';
 import HeaderBarSpace from '../components/HeaderBarSpace';
 import HeaderBar from '../components/HeaderBar';
 import useMediaQuery from '../hooks/useMediaQuery';
-import { useState } from 'react';
-// import { objectTraps } from 'immer/dist/internal';
+
 
 
 const css = {

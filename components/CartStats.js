@@ -1,7 +1,5 @@
 import { Grid, Tooltip } from '@nextui-org/react';
 import { Text } from '@nextui-org/react';
-import Image from 'next/image';
-import { Container, Row, Col } from '@nextui-org/react';
 import { Button, Card, Divider} from '@nextui-org/react';
 import { Input } from '@nextui-org/react';
 import {MoreCircle} from 'react-iconly';

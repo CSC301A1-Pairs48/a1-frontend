@@ -1,10 +1,8 @@
 import { Card, Grid } from '@nextui-org/react';
 import { Text } from '@nextui-org/react';
-import Image from 'next/image'
 import { Button } from '@nextui-org/react';
-import { Input } from '@nextui-org/react';
-import {React, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { React } from 'react';
+import { useDispatch } from 'react-redux';
 import {removeFromCart, increaseQuantity, decreaseQuantity} from '../features/cart/cartSlice'
 import { calculatePrice } from '../utils/util';
 

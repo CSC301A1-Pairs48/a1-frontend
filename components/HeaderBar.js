@@ -1,4 +1,4 @@
-import { Text, Grid, Button } from '@nextui-org/react';
+import { Grid, Button } from '@nextui-org/react';
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
 
